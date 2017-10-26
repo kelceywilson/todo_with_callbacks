@@ -8,6 +8,7 @@ const list = (callback) => {
     const taskList = JSON.parse(data);
 
     // Calculate the lengths of longest id in order to create appropriate header length
+    // bds: this is a perfect use case for reduce
     let idLength = 2;
     taskList.tasks.forEach((task) => {
       if (task.id.toString().length > idLength) {
