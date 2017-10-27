@@ -1,7 +1,11 @@
 const fs = require('fs');
 
+// bds: need to make the change to the new env var name here too
 const taskFile = process.env.NODE_ENV || './taskList.json';
 
+// bds: it looks like you started/anticipated consolidating the code for complete
+// bds: and delete, but didn't actually consolidate it. I agree that it's a great
+// bds: idea. Make another file called "utilities.js" and make the function there.
 const complete = (taskNumber, pushTo) => {
   fs.readFile(taskFile, (err, data) => {
     if (err) throw err;

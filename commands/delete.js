@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+// bds: see comments in complete.js
 const taskFile = process.env.NODE_ENV || './taskList.json';
 
 const del = (taskNumber, pushTo) => {

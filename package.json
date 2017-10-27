@@ -4,7 +4,7 @@
   "description": "",
   "main": "tasks.js",
   "scripts": {
-    "test": "export NODE_ENV=testTaskList.json && mocha"
+    "test": "export JSONFILE_PATH=testTaskList.json && mocha"
   },
   "repository": {
     "type": "git",
